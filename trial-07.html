@@ -9,41 +9,71 @@
       .backgroundbox{
         background-color: #555555;
         width: 600px;
-        height: 330px;
+        height: 130px;
         margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        
       }
-      .topgreybox {
-        /*display: inline-block;*/
-        vertical-align: middle;
+      #top{
+        align-items: center; 
+      }
+      .topbox{
         background-color: #cccccc;
-        width: 192px;
+        height: 115px;
+        margin: 6px;
+        flex: 1;
+      }
+      #middle{
+        align-items: flex-start;
+      }
+      .middletall{
+        background-color: #cccccc;
         height: 100px;
+        margin: 6px;
+        flex: 1;
+      }
+      .middleshort{
+        background-color: #cccccc;
+        height: 75px;
+        margin: 6px;
+        flex: 1;
+      }
+      #bottom{
+        align-items: flex-end;
+      }
+      .bottomleft{
+        background-color: #cccccc;
+        height: 35px;
+        margin: 6px;
+        flex: 1;
+      }
+      .bottomright{
+        background-color: #cccccc;
+        height: 115px;
+        margin: 6px;
+        flex: 1;
       }
     </style>
 
-    <title>012.html</title>
+    <title>07.html</title>
   </head>
   <body>
     <h1>AAAAAHHHHHH</h1>
-    <div class="backgroundbox">
-      <div class="topgreybox">
-      </div>
-      <div class="topgreybox">
-      </div>
-      <div class="topgreybox">
-      </div>
+    <div class="backgroundbox" id="top">
+      <div class="topbox"></div>
+      <div class="topbox"></div>
+      <div class="topbox"></div>
     </div>
-    <div class="backgroundbox">
-      <div class="blackbox">
-      </div>
-      <div class="blackbox">
-      </div>
+    <div class="backgroundbox" id="middle">
+      <div class="middletall"></div>
+      <div class="middleshort"></div>
+      <div class="middletall"></div>
+      <div class="middleshort"></div>
     </div>
-    <div class="backgroundbox">
-      <div class="blackbox">
-      </div>
-      <div class="blackbox">
-      </div>
+    <div class="backgroundbox" id="bottom">
+      <div class="bottomleft"></div>
+      <div class="bottomright"></div>
     </div>
   </body>
 </html>
